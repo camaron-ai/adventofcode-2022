@@ -22,7 +22,7 @@ HAND_SHAPE_TO_INT = {
 }
 ```
 
-given my oponent move $op$ and my response $move$, we build a matrix $M$ to compute the outcome score $score = M[op][move]$, since this matrix is an array, it takes O(1) to collect the score.
+given my oponent move $op$ and my response $move$, we build a matrix $M$ to compute the outcome score $score = M[op][move]$.
 
 finally, the answer is equal to
 
