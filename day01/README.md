@@ -26,7 +26,7 @@ Find the top three Elves carrying the most Calories. How many Calories are those
 
 ### Solution
 again, we first sum over each elves' calories to get the total calories carried by an individual elf, to avoid using extra space, we will reuse the input array `calories[i] = sum(calories[i])`.
-then we could sort the entire array and get the last 3 elements but this will take $O(NlogN)$, so to avoid sorting, we use a heap of size 3 and keep track of the 3 largest element, this will take $O(Nlog3)=O(N)$ 
+then we could sort the entire array and get the last 3 elements but this will take $O(NlogN)$ time., so to avoid sorting, we use a heap of size 3 and keep track of the 3 largest element, this will take $O(Nlog3)=O(N)$ 
 
 finally, we sum the elements in the heap, which takes constant time.
 
