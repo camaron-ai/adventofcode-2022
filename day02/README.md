@@ -25,6 +25,7 @@ HAND_SHAPE_TO_INT = {
 given my oponent move $op$ and my response $move$, we build a matrix $M$ to compute the outcome score $score = M[op][move]$, since this matrix is an array, it takes O(1) to collect the score.
 
 finally, the answer is equal to
+
 $$
 \sum_{i=0}^{n-1} (M[op_i][move_i] + move_i + 1)
 $$
@@ -42,6 +43,7 @@ move = MO[op][outcome]
 $$
 
 finally, the answer is equal to
+
 $$
 \sum_{i=0}^{n-1} (2 * outcome_i + MO[op][outcome] + 1)
 $$
