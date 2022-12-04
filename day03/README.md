@@ -57,7 +57,8 @@ $$
 the space complexity is $O(k)$ that is the cost of creating the HashSets $H_{i_1}, H_{i_2}$
 
 
-# Part 2
+## Part 2
+### Solution
 part 2 is the same as part 1 but now we have to compute the intersection between group of rucksacks $g_i$. let $g_i$ be equal to
 
 $$
