@@ -36,7 +36,12 @@ $$
 
 where
 - $L(t_i)$ returns the lowercase version of $t_i$, $L(A) = a$
-- $U(t_i)$ returns 1 if $t_i$ is a uppercase character, otherwise returns 0. $$ U(t_i) = [[ \text{ $t_i$ is uppercase }  ]]$$
+- $U(t_i)$ returns 1 if $t_i$ is a uppercase character, otherwise returns 0. 
+
+$$
+U(t_i) = [[ \text{ $t_i$ is uppercase }  ]]
+$$
+
 - $ord(t_i)$ returns an integer representing the Unicode character of $t_i$
 
  
