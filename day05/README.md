@@ -30,9 +30,11 @@ we know that the last line $L-1$ is composed of indices marking the stack id, my
 thankfully, parsing the crane's instructions is pretty straightforward :).
 
 the input to our algorithm is an array of stacks $S=[s_0, s_1, ..., s_{m-1}]$, where $m$ is the total number of stacks and $s_i$ stores the characeters in the ith stack. Also we are given a sequences of instructions:
+
 $$
 I=[(c_0, from_0, to_0), (c_1, from_1, to_1), ..., (c_{n-1}, from_{n-1}, to_{n-1})]
 $$
+
 where $n$ is the total number of instructions and $I[i] = (c_i, from_i, to_i)$ indicates the number of crates $c_i$ to move from stack $from_i$ to stack $to_i$.
 
 # Part 1
