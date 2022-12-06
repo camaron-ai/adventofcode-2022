@@ -25,7 +25,7 @@ we first split the string at each line to form a matrix
 ```
 let $L$ be the number of lines in the input string, in this case $L=4$. 
 
-we know that the last line (line $L-1$) is composed of indices marking the stack id, my implementations locates this indices to know in what column the stack's values should be, for example, the index ```"1"``` is located at column 1, since its the second character in the last line, therefore all values in stack 1 should be in column 1, so we just iterate bottom up (from line $L-2$ up to 0) and add the corresponding characters to the first stack (if any). we repeat the process for each stack in the input.
+we know that the last line ($L-1$) is composed of indices marking the stack id, my implementations locates this indices to know in what column the stack's values should be, for example, the index ```"1"``` is located at column 1, since its the second character in the last line, therefore all values in stack 1 should be in column 1, so we just iterate bottom up (from line $L-2$ up to 0) and add the corresponding characters to the first stack (if any). we repeat the process for each stack in the input.
 
 thankfully, parsing the crane's instructions is pretty straightforward :).
 
