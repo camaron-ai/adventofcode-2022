@@ -81,6 +81,7 @@ for part 1, we have to find all directories that have sizes under 100k and compu
 let $T(N)$ be the total size of a directory located at node $N$, which is equal to the sum of sizes of all files within the subtree rooted as node $N$. 
 
 in math, we can define $T(N)$ as follows:
+
 $$
 T(N) = N.size + \sum_{C_i \in N.children} T(C_i)
 $$
@@ -109,7 +110,7 @@ for part 2 we also need the array $SZ$
 
 we will define the free space as $E = 70000000-T(R)$
 
-finally, we will choose the minimum size $ sz \in SZ$ such that $E + sz \ge 30000000$
+finally, we will choose the minimum size $sz \in SZ$ such that $E + sz \ge 30000000$
 
 ### Complexity
 the time complexity is the same as in part 1
