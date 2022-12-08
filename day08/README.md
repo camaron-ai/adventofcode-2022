@@ -161,5 +161,5 @@ the final answer would be the maximum item in $A$
 
 
 ### Complexity
-the time and space complexity is the same as part 1. $$O(nm)$$
+the time and space complexity is the same as part 1. $O(nm)$
 
