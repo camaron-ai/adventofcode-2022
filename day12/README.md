@@ -10,13 +10,13 @@ let $n, m$ be the number of rows and columns in the matrix $M$
 we can think of this problem as a graph where the vertices are all the coordinates within the grid
 
 $$
-V = \bigg\{\text{$(i, j)$ for i in (0, .., n-1) for j in (0, ..., m-1)} \bigg\}
+V = \{\text{$(i, j)$ for i in (0, .., n-1) for j in (0, ..., m-1)} \}
 $$
 
 there is a direct edge between two adjacent coordinates $v=(i, j)$ and $w=(i', j')$ if the elevation of coordinate $w$ is less or at most one unit higher than the elevation at coordinate $v$, so we can define outgoing neighbor set as:
 
 $$
-adj^+(i, j) = \bigg\{\text{(i', j') for i', j' in neighbors(i, j) if $M[i'][j'] - M[i][j] \le 1$} \bigg\}
+adj^+(i, j) = \{\text{(i', j') for i', j' in neighbors(i, j) if $M[i'][j'] - M[i][j] \le 1$} \}
 $$
 
 now that we have our graph $G(V, E)$, we can run breadth first search to find the shortest distance from the start position $(s_i, s_j)$ to the goal position $(e_i, e_j)$
