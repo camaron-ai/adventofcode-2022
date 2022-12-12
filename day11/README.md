@@ -28,11 +28,11 @@ I won't enter into details of how we should parse the input, however, we will in
 for example, given the input monkey above, then
 
 $$
-A_0=[79, 98] \\
-D_0 = 23 \\ 
-T_0 = 2 \\ 
-F_0 = 3 \\
-g_0(old) = old * 19 \\
+A_0=[79, 98]\\
+D_0 = 23\\ 
+T_0 = 2\\ 
+F_0 = 3\\
+g_0(old) = old * 19\\
 $$
 
 
