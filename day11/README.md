@@ -48,7 +48,10 @@ the monkey's decision is based on whether $w$ is divisible by $D_i$, so what if 
 My next worry was if the operation $g_i(w)$ will change the remainder after we apply $f(w)$, but monkeys can only add or multiply the current worry level $w$ and after some math, we realize the following:
 
 $$
-(w + b) \mod D_i = \bigg( w \mod D_i + b \mod D_i  \bigg) \mod D_i \\
+(w + b) \mod D_i = \bigg( w \mod D_i + b \mod D_i  \bigg) \mod D_i
+$$
+
+$$
 (w * a) \mod D_i =  \bigg( w \mod D_i \bigg) * \bigg( a \mod D_i  \bigg)
 $$
 
