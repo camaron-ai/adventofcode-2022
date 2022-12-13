@@ -23,8 +23,7 @@ now that we have our graph $G(V, E)$, we can run breadth first search to find th
 
 
 ### Complexity
-in the worse case, the total number of edges is four times (4 directions) the number of vertices $ |E| = |V| * 4 $, since the number of vertices is equal to $m*n$, the time complexity and space complexity are $ O(n*m) $
-
+in the worse case, the total number of edges is four times (4 directions) the number of vertices $|E| = |V| * 4$, since the number of vertices is equal to $n * m$, the time complexity and space complexity are $O(n * m)$
 
 
 # Part 2
