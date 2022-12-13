@@ -41,7 +41,7 @@ As we keep playing the game, the worry levels start to grow very fast reaching r
 
 the goal is to find the number of inspected items by each monkey, so the first thing to notice is that we do not care about the actual values of the worry levels, given some worry level $w$, we apply an operation $g_i(w)$ and then decide to what monkey we should throw the current item, let's work with an example
 
-let's say $D_i=3$ and $g_i(old) = old + 2$, we receive the worry level $w=4$, then apply $w=g_i(w)=6$ and then we check if $w \mod D_i == 0 \rarr 6 \mod 3 == 0$, since the condition is true, we throw the item to monkey $T_i$. however, if the intial worry level was $w=10$, or $w=13$ or $w=139390$ then the outcome would be the same.
+let's say $D_i=3$ and $g_i(old) = old + 2$, we receive the worry level $w=4$, then apply $w=g_i(w)=6$ and then we check if $w \mod D_i == 0 &rarr; 6 \mod 3 == 0$, since the condition is true, we throw the item to monkey $T_i$. however, if the intial worry level was $w=10$, or $w=13$ or $w=139390$ then the outcome would be the same.
 
 the monkey's decision is based on whether $w$ is divisible by $D_i$, so what if we could find a transformation $f(w)$ such that the remainder of $w$ and $D_i$ is the same after we apply $f(w)$, $w \mod D_i == f(w) \mod D_i$, for now, let us assume we already know this function. 
 
