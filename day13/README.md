@@ -131,7 +131,7 @@ the ```is_pair_in_right_order(x, y)``` function will return $1$ if ```x < y```, 
 ### Complexity
 in the worst case, we have to decide whether two packages are in order based on their length, which happens once we traverse both packages entirely $j=m_p-1$, therefore, the time complexity is $O(m_p)$
 
-the space complexity is also $O(m_p)$ since in the worst case we have to turn each integer in a package $l[j]$ into an array with a single item $[l[j]]$ to compare them correctly.
+the space complexity is also $O(m_p)$ due to the depth of the recursion tree.
 
 
 
