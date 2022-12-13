@@ -32,47 +32,38 @@ $$
 if we compare them item by item, we will get:
 
 ```python
-"""
 l = [1, 1, 3, 1, 1]
 r = [1, 1, 5, 1, 1]
 s = [0, 0, 1, 0, 0]
-"""
 ```
 
 the first two comparisons are not enough to decide since they are equal (status=0), however, at $j=2$ the left item $l[j]$ is less than the right item $r[j]$ so we know that they are in order. let's take a harder example
 
 ```python
-"""
 l = [[1], [2,3,4]]
 r = [[1], 4]
-"""
 ```
 
 we first compare the left ```[1]``` with the right ```[1]```, because they are lists we can not compare them directly, so we can recursively solve the same problem with packages ```([1],  [1])``` so we are left with: 
 
 
 ```python
-"""
 l = [1]
 r = [1]
 s = [0]
-"""
 ```
 
 since they are equal, we can not determine whether they are in order or not, so going back to the main problem
 
 ```python
-"""
 l = [[1], [2,3,4]]
 r = [[1], 4]
 s = [0, ]
-"""
 ```
 
 since $s_0=0$, we move to the next item and do the same, however, note that $r[j]=4$ is not an array and $l[j]$ is, so we turn it into one before comparing both items. next we recursively solve the same problem for ```([2,3,4],  [4])```
 
 ```python
-"""
 l = [2,3,4]
 r = [4]
 s = [1]
@@ -81,11 +72,9 @@ s = [1]
 since $2 \le 4$, we can early stop and return that they are in order (status=1). back to the main problem we have:
 
 ```python
-"""
 l = [[1], [2,3,4]]
 r = [[1], 4]
 s = [0, 1]
-"""
 ```
 as soon we've seen a status $s_j$ different from 0, we can stop and return it, so the original pairs $l$ and $r$ are in the right order.
 
